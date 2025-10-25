@@ -175,7 +175,7 @@ Edit `data/business_info.json`:
 
 1. **API Key Error**
    ```
-   ❌ Please set OPENAI_API_KEY environment variable
+    Please set OPENAI_API_KEY environment variable
    ```
    **Solution**: Set your OpenAI API key in `.env` file
 
