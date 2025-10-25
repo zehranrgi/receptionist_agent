@@ -185,7 +185,7 @@ Edit `data/business_info.json`:
    **Solution**: Use `streamlit run app.py --server.port 8502`
 
 ## Future Enhancements
-
+- [ ] **MCP ZAPIER** - 
 - [ ] **Database Integration** - Replace JSON with PostgreSQL/MySQL
 - [ ] **Real Email Service** - Integrate with SendGrid/AWS SES
 - [ ] **Calendar Integration** - Connect with Google Calendar
@@ -202,13 +202,4 @@ Edit `data/business_info.json`:
 4. Add tests if applicable
 5. Submit a pull request
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- OpenAI for the GPT-4 API
-- Streamlit for the web framework
-- The AI community for inspiration and best practices
 
