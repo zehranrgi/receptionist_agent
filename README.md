@@ -2,6 +2,13 @@
 
 A conversational AI agent that helps customers book appointments at a barber shop. Built with pure Python (no frameworks) and powered by OpenAI's Gpt-5-chat-latest model.
 
+<img width="1235" height="656" alt="image" src="https://github.com/user-attachments/assets/efd84614-bbfe-4e95-9548-19dc85b83c44" />
+
+<img width="1266" height="650" alt="image" src="https://github.com/user-attachments/assets/9e5e7e1b-0903-41aa-966b-e0ef89678ee4" />
+
+
+
+
 ## Features
 
 ### Core Features (Required)
