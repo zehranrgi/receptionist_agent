@@ -1,6 +1,6 @@
 # Elite Barber Shop - AI Receptionist Agent
 
-A conversational AI agent that helps customers book appointments at a barber shop. Built with pure Python (no frameworks) and powered by OpenAI's GPT-4 model.
+A conversational AI agent that helps customers book appointments at a barber shop. Built with pure Python (no frameworks) and powered by OpenAI's Gpt-5-chat-latest model.
 
 ## Features
 
@@ -12,12 +12,8 @@ A conversational AI agent that helps customers book appointments at a barber sho
   - `get_services()` - Retrieve services and pricing
   - `check_availability()` - Check available time slots
   - `book_appointment()` - Book appointments with customer details
-- **OpenAI Integration** - Uses GPT-4 model for natural language processing
+- **OpenAI Integration** - Uses GPT-5 model for natural language processing
 
-### Bonus Features
-- **Streamlit Web Interface** - Beautiful web-based chat interface
-- **Email Confirmation** - Mock email sending for appointments
-- **Appointment Management** - JSON-based appointment storage
 
 ## Project Structure
 
@@ -32,7 +28,6 @@ barber-appointment-agent/
 │   └── business_info.json # Business information
 ├── appointments.json     # Booked appointments (auto-created)
 ├── requirements.txt      # Python dependencies
-├── env_example.txt       # Environment variables template
 ├── .gitignore           # Git ignore rules
 └── README.md            # This file
 ```
@@ -66,12 +61,6 @@ OPENAI_API_KEY=your-openai-api-key-here
 
 ### 3. Run the Application
 
-#### Option A: Terminal Interface
-```bash
-python agent.py
-```
-
-#### Option B: Web Interface (Recommended)
 ```bash
 streamlit run app.py
 ```
@@ -118,50 +107,7 @@ book_appointment(
     total_price=225.0,
     duration_minutes=45
 )
-```
 
-## Example Conversations
-
-### Scenario 1: Successful Booking
-
-```
-USER: Merhaba, yarın randevu alabilir miyim?
-AGENT: Merhaba! Tabii ki yardımcı olabilirim. Hangi hizmetimizden yararlanmak istersiniz?
-
-USER: Saç kesimi ve sakal düzeltme istiyorum
-AGENT: [Calls get_services() and check_availability()]
-Saç kesimi (30 dk, 150 TL) ve sakal düzeltme (15 dk, 75 TL) için toplam 45 dakikalık randevu gerekiyor. Yarın için müsait saatlerimiz:
-- 09:00
-- 11:30
-- 14:00
-- 16:30
-Hangi saat sizin için uygun?
-
-USER: 14:00 olabilir
-AGENT: Mükemmel, 14:00 için ayırtabilirim. Lütfen isim, telefon numarası ve email adresinizi paylaşır mısınız?
-
-USER: Adım Mehmet Yılmaz, tel: 0532-555-1234, email: mehmet@example.com
-AGENT: [Calls book_appointment() and send_email_confirmation()]
-🎉 Randevunuz başarıyla oluşturuldu!
-📅 Tarih: 13 Ekim 2025, Saat 14:00
-✂ Hizmetler: Saç Kesimi, Sakal Düzeltme
-💰 Toplam: 225 TL
-🆔 Randevu numaranız: APT-20251013-001
-Email adresinize onay mesajı gönderdim. Başka bir konuda yardımcı olabilir miyim?
-```
-
-### Scenario 2: Information Request
-
-```
-USER: Fiyatlarınız nedir?
-AGENT: [Calls get_services()]
-İşte hizmetlerimiz ve fiyatlarımız:
-✂ Saç Kesimi - 150 TL (30 dk)
-🧔 Sakal Düzeltme - 75 TL (15 dk)
-💧 Saç Yıkama - 50 TL (10 dk)
-✨ Cilt Bakımı - 200 TL (45 dk)
-Randevu almak ister misiniz?
-```
 
 ## Technical Details
 
@@ -178,25 +124,8 @@ Randevu almak ister misiniz?
 - **Calendar**: Mock calendar in `data/calendar.json`
 - **Services**: Service catalog in `data/services.json`
 
-### API Integration
 
-The agent uses OpenAI's GPT-4 model for:
-- Natural language understanding
-- Intent recognition
-- Response generation
-- Tool call extraction
-
-## Web Interface Features
-
-The Streamlit interface provides:
-
-- **Beautiful UI** - Modern, responsive design
-- **Real-time Chat** - Instant messaging experience
-- **Quick Actions** - One-click buttons for common requests
-- **Business Info Sidebar** - Always-visible salon information
-- **Recent Appointments** - View recent bookings
-- **Mobile Friendly** - Works on all devices
-
+#
 ## Customization
 
 ### Adding New Services
