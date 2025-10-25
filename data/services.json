@@ -1,0 +1,34 @@
+{
+  "services": [
+    {
+      "name": "Haircut",
+      "price": 45,
+      "duration_minutes": 30,
+      "description": "Professional haircut and styling"
+    },
+    {
+      "name": "Beard Trim",
+      "price": 25,
+      "duration_minutes": 15,
+      "description": "Beard shaping and trimming"
+    },
+    {
+      "name": "Hair Wash",
+      "price": 15,
+      "duration_minutes": 10,
+      "description": "Hair wash and blow dry"
+    },
+    {
+      "name": "Facial Treatment",
+      "price": 60,
+      "duration_minutes": 45,
+      "description": "Deep cleansing facial treatment"
+    },
+    {
+      "name": "Haircut + Beard Trim",
+      "price": 65,
+      "duration_minutes": 45,
+      "description": "Complete grooming package"
+    }
+  ]
+}

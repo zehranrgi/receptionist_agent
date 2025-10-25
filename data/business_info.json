@@ -1,0 +1,16 @@
+{
+  "name": "The Greatest Barber Shop",
+  "address": "123 Sunset Boulevard, West Hollywood, CA 90069",
+  "phone": "+1 (323) 555-0123",
+  "hours": {
+    "monday": "09:00-19:00",
+    "tuesday": "09:00-19:00",
+    "wednesday": "09:00-19:00",
+    "thursday": "09:00-19:00",
+    "friday": "09:00-19:00",
+    "saturday": "09:00-18:00",
+    "sunday": "Closed"
+  },
+  "working_hours": "09:00-19:00",
+  "timezone": "America/Los_Angeles"
+}
